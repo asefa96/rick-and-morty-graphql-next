@@ -1,0 +1,19 @@
+query getCharactersById($id:Int!) {
+  characters(page:$id) {
+    info {
+      count
+    }
+    results {
+      name
+      status
+      type
+      species
+      gender
+      id
+      origin{
+        name
+      }
+      image
+    }
+  }
+}

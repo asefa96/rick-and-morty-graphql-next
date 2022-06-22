@@ -1,0 +1,22 @@
+query {
+  locations {
+    info {
+      count
+    }
+    results {
+      id
+      name
+      type
+      dimension
+      residents {
+        id
+        name
+        species
+        status
+        origin {
+          name
+        }
+      }
+    }
+  }
+}
